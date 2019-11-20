@@ -37,9 +37,149 @@
             </div>
          </section>
 
-         <section class="plans">
-            <h2 class="plans__head">Мои планы</h2>
-            
+         <section class="myplan">
+            <h2 class="myplan__head">Мои планы:</h2>
+            <div class="myplan__card">
+              <h3 class="myplan__country">1. Франция, Италия</h3>
+              <span class="myplan__companion">3 попутчика</span>
+              <time>26 мар — 29 мар</time>
+              <button class="myplan__btn">Изменить</button>
+            </div>
+            <div class="myplan__card">
+              <h3 class="myplan__country">2. Таиланд, Индонезия</h3>
+              <span class="myplan__companion">1 попутчик</span>
+              <time>1 июл — 15 июл</time>
+              <button class="myplan__btn">Изменить</button>
+            </div>
+         </section>
+
+         <section class="add-plan">
+           <h2 class="add-plan__head">Добавить план:</h2>
+           <article class="add-plan__step">
+             <h3 class="add-plan__title"><span>Шаг 1.</span> Даты пребывания</h3>
+             <p class="add-plan__text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+             <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="add-plan__param">
+                  <label for="search-companion" class="add-plan__label">Ищу попутчика: <span>Чел.</span></label>
+                  <input type="number" min="1" value="2" id="search-companion" name="search-companion">
+                </div>
+                <div class="add-plan__param">
+                  <label for="travel-period" class="add-plan__label">Длительность: <span>Дн.</span></label>
+                  <input type="number" min="1" value="2" id="travel-period" name="travel-period">
+                </div>
+                <label for="with-children"><input type="checkbox" name="with-children" id="with-children" checked>Можно с детьми</label>
+                
+                <div class="calendar-wrap">
+                  <div class="month">
+                    <button class="month__back">Назад</button>
+                    <h3 class="month__name">Март 2019</h3>
+                    <button class="month__next">Веперд</button>
+                  </div>
+                  <table class="calendar">
+                    <tr class="calendar__row">
+                      <th class="calendar__cell-head">п</th>
+                      <th class="calendar__cell-head">в</th>
+                      <th class="calendar__cell-head">с</th>
+                      <th class="calendar__cell-head">ч</th>
+                      <th class="calendar__cell-head">п</th>
+                      <th class="calendar__cell-head">с</th>
+                      <th class="calendar__cell-head">в</th>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">23</td>
+                      <td class="calendar__cell">24</td>
+                      <td class="calendar__cell">25</td>
+                      <td class="calendar__cell">26</td>
+                      <td class="calendar__cell">27</td>
+                      <td class="calendar__cell">28</td>
+                      <td class="calendar__cell">1</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">2</td>
+                      <td class="calendar__cell">3</td>
+                      <td class="calendar__cell">4</td>
+                      <td class="calendar__cell">5</td>
+                      <td class="calendar__cell">6</td>
+                      <td class="calendar__cell">7</td>
+                      <td class="calendar__cell">8</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">9</td>
+                      <td class="calendar__cell">10</td>
+                      <td class="calendar__cell">11</td>
+                      <td class="calendar__cell">12</td>
+                      <td class="calendar__cell">13</td>
+                      <td class="calendar__cell">14</td>
+                      <td class="calendar__cell">15</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">16</td>
+                      <td class="calendar__cell">17</td>
+                      <td class="calendar__cell">18</td>
+                      <td class="calendar__cell">19</td>
+                      <td class="calendar__cell">20</td>
+                      <td class="calendar__cell">21</td>
+                      <td class="calendar__cell">22</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">23</td>
+                      <td class="calendar__cell">24</td>
+                      <td class="calendar__cell">25</td>
+                      <td class="calendar__cell">26</td>
+                      <td class="calendar__cell">27</td>
+                      <td class="calendar__cell">28</td>
+                      <td class="calendar__cell">29</td>
+                    </tr>
+                    <tr class="calendar__row">
+                      <td class="calendar__cell">30</td>
+                      <td class="calendar__cell">31</td>
+                      <td class="calendar__cell">1</td>
+                      <td class="calendar__cell">2</td>
+                      <td class="calendar__cell">3</td>
+                      <td class="calendar__cell">4</td>
+                      <td class="calendar__cell">5</td>
+                    </tr>
+                  </table>
+                </div>
+             </form>
+             <button class="add-plan__btn add-plan__btn--next">Следующий шаг</button>
+           </article>
+
+           <article class="add-plan__step">
+             <h3 class="add-plan__title"><span>Шаг 2.</span> Маршрут</h3>
+             <p class="add-plan__text">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+             <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="add-plan__select-wrap">
+                  <select class="add-plan__select" name="country1">
+                    <option>Босния и Герцеговина</option>                
+                  </select>
+                  <span class="add-plan__flag"><img src="" alt="">Флаг страны</span>
+                  <span class="add-plan__close">Закрыть</span>
+                </div>
+                <div class="add-plan__select-wrap">
+                  <select class="add-plan__select" name="country2">
+                    <option>Чехия</option>                
+                  </select>
+                  <span class="add-plan__flag"><img src="" alt="">Флаг страны</span>
+                  <span class="add-plan__close">Закрыть</span>
+                </div>
+                <div class="add-plan__select-wrap">
+                  <select class="add-plan__select" name="choose-country[]">
+                    <option>Выберети страну</option>                
+                  </select>                  
+                  <span class="add-plan__close">Закрыть</span>
+                </div>
+                <input type="text" class="add-plan__country" name="add-country" placeholder="Добавить страну">
+             </form>
+             <button class="add-plan__btn add-plan__btn--next">Следующий шаг</button>
+             <button class="add-plan__btn add-plan__btn--back">На шаг назад</button>
+           </article>
+           <article class="add-plan__step">
+             <h3 class="add-plan__title"><span>Шаг 3.</span> Развлечения</h3>
+             <p class="add-plan__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+             <button class="add-plan__btn add-plan__btn--next">Отправить</button>
+             <button class="add-plan__btn add-plan__btn--back">На шаг назад</button>
+           </article>
          </section>
       </main>
 
