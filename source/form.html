@@ -140,9 +140,9 @@
                       <td class="calendar__cell">5</td>
                     </tr>
                   </table>
-                </div>
+                </div>             
+                <button class="add-plan__btn add-plan__btn--next">Следующий шаг</button>
              </form>
-             <button class="add-plan__btn add-plan__btn--next">Следующий шаг</button>
            </article>
 
            <article class="add-plan__step">
@@ -169,16 +169,26 @@
                   </select>                  
                   <span class="add-plan__close">Закрыть</span>
                 </div>
-                <input type="text" class="add-plan__country" name="add-country" placeholder="Добавить страну">
-             </form>
-             <button class="add-plan__btn add-plan__btn--next">Следующий шаг</button>
-             <button class="add-plan__btn add-plan__btn--back">На шаг назад</button>
+                <input type="text" class="add-plan__country" name="add-country" placeholder="Добавить страну">             
+                <button class="add-plan__btn add-plan__btn--next">Следующий шаг</button>
+                <button class="add-plan__btn add-plan__btn--back">На шаг назад</button>
+              </form>
            </article>
            <article class="add-plan__step">
              <h3 class="add-plan__title"><span>Шаг 3.</span> Развлечения</h3>
              <p class="add-plan__text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-             <button class="add-plan__btn add-plan__btn--next">Отправить</button>
-             <button class="add-plan__btn add-plan__btn--back">На шаг назад</button>
+             <form action="https://echo.htmlacademy.ru" method="post">
+               <label for="plan-description" class="add-plan__country-name">Босния и Герциговина <img src="https://via.placeholder.com/50x50" alt="" class="add-plan__flag"></label>
+               <textarea class="add-plan__description" name="plan-description" id="plan-description" cols="25" rows="15" placeholder="План действий"></textarea>
+               <div class="add-plan__description-wrap">
+                 <h4 class="add-plan__country-name">Чехия <img src="https://via.placeholder.com/50x50" alt="" class="add-plan__flag"></h4>
+                 <p class="add-plan__description">
+                   Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                 </p>
+               </div>
+               <button class="add-plan__btn add-plan__btn--next">Отправить</button>
+               <button class="add-plan__btn add-plan__btn--back">На шаг назад</button>
+             </form>
            </article>
          </section>
       </main>
