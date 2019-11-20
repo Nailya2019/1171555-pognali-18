@@ -7,19 +7,73 @@
 <body>
 	<header class="header">   		
    <a href="index.html" class="page-logo header__logo">Погнали?</a>
-   <button class="main-nav__toggle" type="button">Открыть меню</button>
-   <nav class="main-nav">   			
-   </nav>
+   <nav class="main-nav"></nav>
+   <button class="header__toggle" type="button">Открыть меню</button>
    <h1 class="header__catalog-title">Попутчики</h1>
  </header>
 
  <main class="main-catalog">
+ 	<section class="filter-top"> 		
+ 		<h2 class="filter-top__head">Фильтрация по странам</h2>
+ 		<button class="filter-top__btn">Кнопка</button>
+ 	</section>
+
+ 	<section class="filter">
+ 		<div class="filter__wrap">
+ 			<h2 class="filter__head">Подберите идеального попутчика</h2>
+ 			<form action="" class="filter__form">
+ 				<div class="filter__subhead-wrap">
+ 					<h3 class="filter__subhead">Хобби</h3>
+ 					<span class="filter__arrow">Развернуть</span>
+ 				</div>
+ 				<div class="filter__subhead-wrap">
+ 					<h3 class="filter__subhead">Музыка</h3>
+ 					<span class="filter__arrow">Развернуть</span>
+ 				</div>
+ 				<input type="checkbox" name="rock" id="rock" value="Тяжелый рок" checked><label class="music-label" for="rock">Тяжелый рок</label>
+ 				<input type="checkbox" name="rap" id="rap" value="Русский рэп" checked><label class="music-label" for="rap">Русский рэп</label>
+ 				<input type="checkbox" name="eurodance" id="eurodance" value="Евроденс" checked><label class="music-label" for="eurodance">Евроденс</label>
+ 				<div class="filter__subhead-wrap">
+ 					<h3 class="filter__subhead">Еда</h3>
+ 					<span class="filter__arrow">Развернуть</span>
+ 				</div>
+ 				<div class="filter__subhead-wrap">
+ 					<h3 class="filter__subhead">Транспорт</h3>
+ 					<span class="filter__arrow">Развернуть</span>
+ 				</div>
+ 					<ul class="filter__transport-list">
+		          <li class="filter__transport filter__transport--airplane filter__transport--active">Самолет</li>
+		          <li class="filter__transport filter__transport--bus">Автобус</li>
+		          <li class="filter__transport filter__transport--bicycle">Велосипед</li>
+		          <li class="filter__transport filter__transport--foot">Пешком</li>
+		        </ul>
+		      <div class="filter__subhead-wrap">
+ 					<h3 class="filter__subhead">Левел</h3>
+ 					<span class="filter__arrow">Развернуть</span>
+ 				</div>
+ 				<div class="level-wrap">
+ 					<div class="level__index">
+						<label class="level__min">от <input name="level-min" type="text" value="0"></label>
+						<label class="level__max">до <input name="level-max" type="text" value="100"></label>
+					</div>
+					<div class="level__controls">
+			            <div class="level__scale">
+								<div class="level__bar"></div>
+							</div>
+						<div class="level__toggle level__toggle-min"></div>
+						<div class="level__toggle level__toggle-max"></div>
+					</div>					
+				</div>
+ 				<input type="submit" value="Показать" class="form__btn">
+ 			</form>
+ 		</div>
+ 	</section>
    <section class="c-travelers">
     <div class="c-travelers__wrap">
      <ul class="c-travelers__list">
       <li class="c-travelers__item">
        <img src="https://via.placeholder.com/150x150" alt="" class="c-travelers__img">
-       <h3 class="c-travelers__name">Таня Фирсова</h3>
+       <h2 class="c-travelers__name">Таня Фирсова</h2>
        <span class="c-travelers__like-btn">Лайк</span>
        <span class="c-travelers__like">1,5 м</span>
        <p class="c-travelers__hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
@@ -49,7 +103,7 @@
     </li>
     <li class="c-travelers__item">
      <img src="https://via.placeholder.com/150x150" alt="" class="c-travelers__img">
-     <h3 class="c-travelers__name">Петя Демин</h3>
+     <h2 class="c-travelers__name">Петя Демин</h2>
      <span class="c-travelers__like-btn">Лайк</span>
      <span class="c-travelers__like">150</span>
      <p class="c-travelers__hashtag">#бургер #бар #футбол #концерт #крафт</p>
@@ -78,7 +132,7 @@
   </li>
   <li class="c-travelers__item">
    <img src="https://via.placeholder.com/150x150" alt="" class="c-travelers__img">
-   <h3 class="c-travelers__name">Марк Смолов</h3>
+   <h2 class="c-travelers__name">Марк Смолов</h2>
    <span class="c-travelers__like-btn">Лайк</span>
    <span class="c-travelers__like">1700</span>
    <p class="c-travelers__hashtag">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -108,7 +162,7 @@
 </li>
 <li class="c-travelers__item">
  <img src="https://via.placeholder.com/150x150" alt="" class="c-travelers__img">
- <h3 class="c-travelers__name">Лариса Роговая</h3>
+ <h2 class="c-travelers__name">Лариса Роговая</h2>
  <span class="c-travelers__like-btn">Лайк</span>
  <span class="c-travelers__like">23</span>
  <p class="c-travelers__hashtag">#образование #карьера #учеба #линкедин</p>
